@@ -7,28 +7,102 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   
   <title>Frontend Mentor | Blog preview card</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  
+
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+    body{
+      background-color: hsl(47, 88%, 63%);
+    }
+    .main-container{
+      display: flex;
+      min-width: 375px;
+      height: 100vh;
+      align-items: center;
+      justify-content: center;
+      margin: 0px;
+      padding: 0px;
+      
+      
+    }
+    .card{
+      width: 350px;
+      height: 500px;
+      border: 2px solid;
+      background-color: hsl(0, 0%, 100%);
+      padding: 20px;
+      border-radius: 10px;
+      font-size: 16px;
+      color:hsl(0, 0%, 42%) ;
+      box-shadow: 10px 10px black;
+      border-radius: 10px;
+      height: fit-content;
+      font-family: "Outfit", sans-serif;  
+    }
+    img{
+      border-radius: 5px;
+    }
+   
+    .avatar{
+      display: flex;
+      width: 300px;
+      height: 40px;
+      font-size: 16px;
+      gap: 20px;
+      
+      
+    }
+    .avatar img{
+      width: 40px;
+      float: left;  
+    }
+    .avatar p{
+      font-weight: bold;
+      color: hsl(0, 0%, 7%);
+    }
+    button{
+      background-color: hsl(47, 88%, 63%);
+      font-weight: bold;
+      border-radius: 5px;
+      font-size: 16px;
+      border: none;
+    }
+    #span1{
+      font-weight: bold;
+      font-size: 24px;
+      color: hsl(0, 0%, 7%);
+
+    }
+    span{
+      color: hsl(0, 0%, 7%);;
+    }
   </style>
 </head>
 <body>
 
-  Learning
-
-  Published 21 Dec 2023
-
-  HTML & CSS foundations
-
-  These languages are the backbone of every website, defining structure, content, and presentation.
-
-  Greg Hooper
+  <div class="main-container">
+    <div class="card">
+      <img src="./assets/images/illustration-article.svg" alt="aticle">
+      <p><button type="button" value="learnig"> Learning </button><br><br>
+        <span>Published 21 Dec 2023 </span><br><br>
+      
+        <span id="span1">HTML & CSS foundations</span><br><br>
+        These languages are the backbone of every website, defining structure, content, and presentation.</p>
+      <div class="avatar">
+        <img src="./assets/images/image-avatar.webp" alt="image-avatar"><p>Greg Hooper</p>
+      </div>
+    </div>
+  </div> <br><br>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Aniket</a>.
   </div>
 </body>
 </html>
